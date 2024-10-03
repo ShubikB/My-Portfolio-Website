@@ -1,0 +1,42 @@
+html{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width: auto;
+    height: auto;
+}
+
+#navbar{
+    height:150px;
+    width: auto;
+    padding:10px 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #FFAB3B;
+
+}
+#navLogo{
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+
+}
+#navLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+
+}
+#navLinks li{
+    list-style-type: none;
+
+}
+#navLinks li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
