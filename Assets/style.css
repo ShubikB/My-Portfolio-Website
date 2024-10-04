@@ -13,30 +13,30 @@ body{
     width: auto;
     padding:10px 40px;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
-    background-color: #FFAB3B;
+    gap: 100px;
 
 }
 #navLogo{
     height: 80px;
     width:80px;
     border-radius: 50%;
+    background-color: aqua;
 
 }
 #navLinks{
+    list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:20px;
+    gap:100px;
 
 }
-#navLinks li{
-    list-style-type: none;
 
-}
 #navLinks li a{
     text-decoration: none;
-    font-weight: bold;
+    font-size: 30px;
+    color: black;
 }
 
