@@ -1,0 +1,212 @@
+  
+  html{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width: auto;
+    height: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+
+#navbar{
+    height:100px;
+    width: auto;
+    padding:10px 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 100px;
+
+}
+/* #navLogo{
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    background-color: aqua;
+
+} */
+#navLinks{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+
+}
+
+#navLinks li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.mainIntroContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: auto;
+    background-color: #e2aeae;
+    border-bottom-left-radius:200px;
+    border-top-right-radius: 200px;
+
+}
+.introImage{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-left:-100px;
+
+}
+.introImage img {
+    height: 500px;
+    width: auto;
+    padding: 10px;
+    
+}
+.introText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 50px;
+
+}
+#imShubik{
+    font-size: 7em;
+    margin:20px;
+}
+
+#h2description{
+    font-size: 1.5em;
+    text-align: center;
+    margin:20px;
+
+
+}
+#downloadCV{
+    width:150px;
+    height: 50px;
+    border-radius:50px;
+    margin:20px;
+    background-color: #FF792E;
+    font-size: 1em;
+    border: none;
+
+}
+#skillsSection{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.skillsDescription{
+    background-color: #FF792E;
+    border-radius: 62.5px;
+    margin: 50px;
+    height: 125px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+#aboutme{
+    height :400px;
+    width:100%;
+    /* background-color: #e2aeae; */
+    border-bottom-right-radius:200px;
+    border-top-left-radius: 200px;
+    margin:20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#introParagraph  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width:85%;
+    padding: 0px 80px;
+    height:400px;
+    background-color: #e2aeae;
+    border-bottom-left-radius:200px;
+    border-top-right-radius: 200px;
+
+
+}   
+
+#introParagraph p {
+    font-size:1em;
+    text-align:center;
+    }
+
+/* Contact Section */
+.contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    /* background-color: #e2aeae; */
+    /* border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px; */
+}
+
+.contactFormContainer {
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactForm label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #FF792E;
+}
+
+#sendMessage {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #FF792E;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sendMessage:hover {
+    background-color: #d96a1d;
+}
