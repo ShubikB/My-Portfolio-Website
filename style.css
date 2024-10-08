@@ -24,6 +24,7 @@ body{
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
+    position:relative;
 }
 
   
@@ -80,8 +81,7 @@ body{
     width: auto;
     margin:10px 0px;
     background-color:#fff;
-    border-bottom-left-radius:200px;
-    border-top-right-radius: 200px;
+    border-radius: 20px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -109,6 +109,7 @@ body{
 #imShubik{
     font-size: 7em;
     margin:20px;
+    text-align: center;
 }
 
 #introDescription{
@@ -138,7 +139,7 @@ body{
 .skillsDescription{
     background-color: var(--backgroundColor);
     border-radius: 62.5px;
-    margin: 15px;
+    margin: 30px 0px 0px 0px;
     height: 125px;
     width: 700px;
     gap:50px;
@@ -367,3 +368,19 @@ footer a:hover{
     color: #000;
 }
 
+@media (max-width: 768px) {
+    .mainIntroContainer{
+        flex-flow: column-reverse;
+        height: auto;
+    }
+    .introImage{
+        margin-left: 0px;
+        margin-bottom: -50px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .mainIntroContainer{
+        flex-flow: column-reverse;
+        height: auto;
+    }
+}
