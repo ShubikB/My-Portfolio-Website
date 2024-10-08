@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="themetoggler">
     <header>
         <div id="navbar">
-            <!-- <div id="navLogo"><a href=""><img src="" ></a> </div> -->
+            <a id="mainLogo" href=""><img src="./Assets/Icons/s.png" ></a>
                 <ul id="navLinks">
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="#aboutme">About</a></li>
                     <li><a href="#myProjects">Projects</a></li>
-                    <li><a href=".contactme">Contact</a></li>
+                    <li><a href="#contactme">Contact</a></li>
                 </ul>
         </div>
     </header>
@@ -25,8 +25,8 @@
         <div class="mainIntroContainer" >
             <div class="introText">
                 <h1 id="imShubik">&#x1f44b I'm Shubik</h1>
-                <h2 id="h2description">A full stack developer.<br> <br>I strive to create visually apealing <br> and fully functional websites.</h2>
-                <button id="downloadCV" type="button">Download CV</button>
+                <h2 id="introDescription">A full stack developer.<br> <br>I strive to create visually apealing <br> and fully functional websites.</h2>
+                <a href="./Assets/Images/picokok.png" download="Download"> <button id="downloadCV" type="button">Download CV</button> </a>
             </div>
             <div class="introImage"> 
                 <img src="./Assets/Images/picokok.png" alt="Shubik's Headshot Image">
@@ -35,44 +35,50 @@
     </main> 
     <div id="skillsSection"> 
         <div class="skillsDescription">
-
             <h2>My Experties</h2>
             <img src="./Assets/Icons/SkillSet.png">
         </div>
     </div>
     <div id="aboutme">
-        
+        <h2>More About Me</h2>
         <div id="introParagraph">
-            <h2>More about me</h2>
-            <p> As a lifelong tech enthusiast, I've always been fascinated by the possibilities of technology.<br><br> 
-                From tinkering with my grandfather's radio as a child to exploring the latest advancements today, 
-                I've dedicated my life to understanding how technology can positively impact the world.<br><br>
-                My ultimate goal is to create innovative solutions that transform millions of lives and redefine the way we interact with technology.</p> 
-                <p>
-                    Driven by my passion for technology, I enrolled in the Bachelor of Information Technology program at Kent Institute Australia in Sydney.<br> <br>
-                    Over the past two years, I've delved deep into computer information technologies, learning programming languages like Java, HTML, CSS, PHP, and SQL.<br><br>
-                    Through hands-on experience gained from various projects and assignments, I've been developing a strong foundation in the field. 
-                    
-                </p>
+            <p>
+                As a lifelong tech enthusiast, I've always been fascinated by the possibilities of technology. From tinkering with my grandfather's radio as a child to exploring the latest advancements today, I've dedicated my life to understanding how technology can positively impact the world.
+            </p>
+            <p>
+                Driven by my passion, I enrolled in the <span class="highlight">Bachelor of Information Technology</span> program at Kent Institute Australia in Sydney. Over the past two years, I have honed my skills in programming languages like Java, HTML, CSS, PHP, and SQL.
+            </p>
+            <p>
+                My ultimate goal is to create innovative solutions that transform lives and redefine how we interact with technology.
+            </p>
         </div>
+    
     </div>
+    
     <div id="myProjects">
+        <h2>My Projects</h2>
         <div id="projectList">
-            <h2> My projects</h2>
-            <ul >
-                <li><div class="project">
-                    <h3>A Travel Volg website</h3>
-                </div></li>
-                <li><div class="project">
-                   <h3>A  Solar System </h3>
-                </div></li>
-            </ul>
-            <h4>These are some of the projects i have finished so far, you can view my latest projects on my <a href="https://github.com/ShubikB">Github</a> or my <a href="https://www.linkedin.com/in/shubik-bhatt-456923228/">Linkden</a> </h4>
+            <div class="project">
+                <h3>A Travel Blog Website</h3>
+                <p>This website features an interactive blog where users can share their travel experiences and explore various destinations.</p>
+                <a href="#" class="viewMore">View Project</a>
+            </div>
+            <div class="project">
+                <h3>A Solar System Simulation</h3>
+                <p>A detailed web-based simulation of the solar system, including interactive orbits and planetary details.</p>
+                <a href="#" class="viewMore">View Project</a>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+        
+        <div id="projectLinks">
+            <p>Check out more of my projects on <a href="https://github.com/ShubikB">GitHub</a> or <a href="https://www.linkedin.com/in/shubik-bhatt-456923228/">LinkedIn</a></p>
         </div>
     </div>
+    
     <div id="contactme" class="contactSection">
+        <h2>Contact Me</h2>
         <div class="contactFormContainer">
-            <h2>Contact Me</h2>
             <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -113,6 +119,8 @@
     
     
         </div>
-    </footer>   
+    </footer>
+    </div>  
+    <div class="top"> <a href="#navbar">Go to Top</a></div> 
 </body>
 </html>
