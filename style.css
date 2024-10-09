@@ -90,8 +90,9 @@ body{
 .introImage img {
     height: 500px;
     width: auto; 
+
 }
-.introText{
+.introTextContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,6 +106,30 @@ body{
     text-align: center;
 }
 
+#waveEmoji {
+    height: auto;
+    width: 100px;
+    animation: wave 1s infinite ease-in-out;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg) translateY(0);
+    }
+    25% {
+      transform: rotate(-5deg) translateY(-5px);
+    }
+    50% {
+      transform: rotate(5deg) translateY(7px);
+    }
+    75% {
+      transform: rotate(-3deg) translateY(-3px);
+    }
+    100% {
+      transform: rotate(0deg) translateY(0);
+    }
+  }
+
 #introDescription{
     font-size: 1.5em;
     text-align: center;
@@ -112,16 +137,23 @@ body{
 
 
 }
+
 #downloadCV{
     width:150px;
     height: 50px;
     border-radius:50px;
-    margin:20px;
+    /* margin:20px; */
     background-color:var(--ascentColor);
     font-size: 1em;
     border: none;
+    cursor: pointer;
 
 }
+#downloadCV:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
 #skillsSection{
    
     display: flex;
