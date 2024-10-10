@@ -114,19 +114,19 @@ body{
   
   @keyframes wave {
     0% {
-      transform: rotate(0deg) translateY(0);
+      transform: rotatez(0deg) translateY(0);
     }
     25% {
-      transform: rotate(-5deg) translateY(-5px);
+      transform: rotatez(-5deg) translatey(-5px);
     }
     50% {
-      transform: rotate(5deg) translateY(7px);
+      transform: rotatez(-9deg) translateY(7px);
     }
     75% {
-      transform: rotate(-3deg) translateY(-3px);
+      transform: rotatez(-3deg) translateY(-3px);
     }
     100% {
-      transform: rotate(0deg) translateY(0);
+      transform: rotatez(0deg) translateY(0);
     }
   }
 
