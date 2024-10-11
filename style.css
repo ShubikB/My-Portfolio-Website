@@ -1,11 +1,13 @@
 
  :root{
 
-    --backgroundColor : #f5f5f5;
+    --bgc :rgba(0, 0, 0, 0.03);
     --primarycolor:#CBF3F0;
     --ascentColor:  #FF792E;
 
     --shadow-subttle: 0 5px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+
 }
 
 html{
@@ -18,9 +20,6 @@ body{
     width: auto;
     height: auto;
     font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    /* position:relative; */
 }
 
   
@@ -31,7 +30,6 @@ nav{
     display: flex;
     justify-content:center;
     align-items: center;
-    
 }
 
 #navLinks{
@@ -39,15 +37,15 @@ nav{
     align-items: center;
     justify-content: space-around;
     list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color:var(--bgc) ;
     height:75px;
     width: 1000px;
     border-radius:20px;
     margin: 0;
     padding: 0;
     gap:100px;
-
 }
+
 #navLinks li a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -55,11 +53,10 @@ nav{
     transition: color .3s ease-in-out;
     position: relative;
     padding-bottom: 5px;
-
 }
+
 #navLinks li a:hover{
     color: var(--ascentColor);
-
 }
 
 #navLinks li a::after{ 
@@ -73,7 +70,6 @@ nav{
     padding: 0px;
     background-color: var(--ascentColor);
     transition: width 0.3s ease-in-out;
-
 }
 #navLinks li a:hover:after{
     /* to view the underline */
@@ -84,93 +80,77 @@ nav{
 
 /* ----------------------------------------Hero------------------------- */
 
-
-
-.mainIntroContainer{
+.hero{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 500px;
     width: auto;
     margin:10px 0px;
-    background-color:#fff;
-    border-radius: 20px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
-
+    max-width:1900px ;
+    background-color:var(--bgc);
+    box-shadow: var(--shadow-subttle);
 }
-.introImage{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    margin-left:-100px;
 
-}
-.introImage img {
-    height: 500px;
-    width: auto; 
-
-}
-.introTextContainer{
+.introText{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-top: 50px;
-
 }
+
 #imShubik{
-    font-size: 7em;
-    margin:20px;
+    font-size: 7rem;
+    margin:25px;
     text-align: center;
 }
-
-#waveEmoji {
-    height: auto;
-    width: 100px;
-    animation: wave 1s infinite ease-in-out;
-  }
-  
-  @keyframes wave {
-    0% {
-      transform: rotatez(0deg) translateY(0);
-    }
-    25% {
-      transform: rotatez(-5deg) translatey(-5px);
-    }
-    50% {
-      transform: rotatez(-9deg) translateY(7px);
-    }
-    75% {
-      transform: rotatez(-3deg) translateY(-3px);
-    }
-    100% {
-      transform: rotatez(0deg) translateY(0);
-    }
-  }
 
 #introDescription{
-    font-size: 1.5em;
+    font-size: 1.2rem;
     text-align: center;
-    margin:20px;
-
-
+    width: 500px;
+}
+#occupation{
+    font-size: 1.5rem;
 }
 
 #downloadCV{
     width:150px;
     height: 50px;
     border-radius:50px;
-    /* margin:20px; */
+    margin:25px;
     background-color:var(--ascentColor);
-    font-size: 1em;
+    font-size: 1.2rem;
     border: none;
     cursor: pointer;
-
 }
+
 #downloadCV:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
+
+.introImage{
+    margin-left:-90px;
+
+}
+
+.introImage img {
+    height: auto;
+    width: 400px; 
+    margin:0;
+    padding: 0; 
+}
+
+.underline{
+    width: 386px;
+    height: 6px;
+    background-color: var(--ascentColor);
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+
 
 #skillsSection{
    
@@ -438,19 +418,6 @@ footer a:hover{
     color: #000;
 }
 
-@media (max-width: 768px) {
-    .mainIntroContainer{
-        flex-flow: column-reverse;
-        height: auto;
-    }
-    .introImage{
-        margin-left: 0px;
-        margin-bottom: -50px;
-    }
-}
-@media only screen and (max-width: 992px) {
-    .mainIntroContainer{
-        flex-flow: column-reverse;
-        height: auto;
-    }
+@media screen and (min-width:688PX) and (max-width:992px){
+    
 }
