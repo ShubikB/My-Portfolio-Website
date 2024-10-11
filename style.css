@@ -39,12 +39,14 @@ nav{
     list-style-type: none;
     background-color:var(--bgc) ;
     height:75px;
-    width: 1000px;
+    width: auto;
     border-radius:20px;
     margin: 0;
-    padding: 0;
+    padding: 0px 50px;
     gap:100px;
 }
+
+
 
 #navLinks li a {
     text-decoration: none;
@@ -417,7 +419,19 @@ footer a:hover{
     text-decoration: none;
     color: #000;
 }
+/* FOR Tablet View  */
+@media screen and (min-width:480PX) and (max-width:992px){
+ 
+    .hero{
+        flex-wrap: wrap-reverse;
+    }
+    .introImage{
+        margin: 0;
+    }
+}
 
-@media screen and (min-width:688PX) and (max-width:992px){
-    
+@media screen and (max-width:480px){
+    .hero{
+        flex-wrap: wrap-reverse; 
+    }
 }
