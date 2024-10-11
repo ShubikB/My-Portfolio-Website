@@ -1,6 +1,6 @@
 WELCOME
 
-Link to view the website https://shubikb.github.io/personalWebsite2/
+Link to view the website https://shubikb.github.io/My-Portfolio-Website/
 
 This is my portfolio website. 
 I share my coding Projects, Graphic Designs, My Hobbies and My Passion in this website.
