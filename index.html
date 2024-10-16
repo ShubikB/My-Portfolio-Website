@@ -10,41 +10,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul id="navLinks">
-                <a id="mainLogo" href="#">SHUBIK</a>
+
+
+    <header class="flex-center">
+        <nav class="navbar flex">
+            <div class="main-logo flex-center">
+                <a href="#">Shubik</a>
+            </div>
+            <div class="menu flex">
                 <a href="#aboutme">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#myProjects">Projects</a>
                 <a href="#contactme">Contact</a>
-            </ul>
+            </div>
         </nav>
     </header>
+
+
+
     <main>
-        <section class="hero">
-            <div class="heroWrapper">
-                <div class="introText">
-                    <h1 id="imShubik">I'm Shubik</h1>
-                    <div id="introDescription">
-                        <h2 id="occupation">A full-stack developer</h2>
+        <section id="hero" class="flex-center">
+            <div class="hero-container flex-center">
+
+                <div class="intro-container flex-center">
+                    <h1 id="im-Shubik">I'm Shubik</h1>
+                    <div id="introduction">
+                        <h2 id="job-title">A full-stack developer</h2>
                         <p> I craft visually stunning websites that break down the barriers between humans and technology.<br><br>My passion lies in creating intuitive, immersive digital experiences that leave a lasting impression.</p>
                     </div>
-                    <a href="./Assets/Images/picokok.png" download="Download"> <button id="downloadCV" type="button" >Download CV</button> </a>
+                    <a href="./Assets/Images/picokok.png" download="Download"> <button id="downloadCV-button" type="button" >Download CV</button> </a>
                 </div>
 
-                <div class="introImage"> 
+                <div class="intro-image"> 
                     <img src="./Assets/Images/picokok.png" alt="Shubik's Headshot Image">
-                    <div class="underline"></div>
+                    <div class="intro-image-underline"></div>
                 </div>
+
             </div>
         </section>
    
-    <section id="skills"> 
-        <div class="skillsWrapper">
+    <div id="skills" class="flex-center"> 
+        <div class="skills-container flex-center">
             <h2>My Experties</h2>
 
-            <div class="skillsList">
+            <div class="skills-list flex">
                 <div class="skillImgIcon"> <img src="Assets/Icons/html.png" alt="HTML">HTML</div>
                 <div class="skillImgIcon"> <img src="Assets/Icons/css.png" alt="CSS">CSS</div>          
                 <div class="skillImgIcon"> <img src="Assets/Icons/js.png" alt="JavaScript" >JavaScript</div>
@@ -53,7 +62,7 @@
             </div>
 
         </div>
-    </section>
+    </div>
     <div class="top"> <a href="#">Go to Top</a></div> 
 
     <div id="aboutme">
@@ -94,7 +103,7 @@
         </div>
     </div>
     
-    <div id="contactme" class="contactSection">
+    <!-- <div id="contactme" class="contactSection">
         <h2>Contact Me</h2>
         <div class="contactFormContainer">
             <form id="contactForm">
@@ -110,7 +119,7 @@
                 <button type="submit" id="sendMessage">Send Message</button>
             </form>
         </div>
-    </div>
+    </div> -->
     
 </main> 
     <footer>

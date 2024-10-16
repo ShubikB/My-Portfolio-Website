@@ -1,66 +1,80 @@
 
 :root{
 
-    --bgc :rgba(0, 0, 0, 0.03);
-    --primarycolor:#CBF3F0;
-    --ascentColor:  #FF792E;
+    --black-subttle:rgba(0, 0, 0, 0.08);
+    --ascent-color-subttle:#f1d4a8;
+    --ascent-color: #FF792E;
 
     --shadow-subttle: 0 5px 8px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-
 }
 
 html{
-    margin:0;
-    padding:0;
     scroll-behavior: smooth;
 }
 
 body{
+    margin:0;
+    padding:0;
     width: auto;
-    height: auto;
+    min-height: 100vh;
     font-family: "Ubuntu", sans-serif;
 }
 
-  
-/* -------------------------------------NavBar--------------------------- */
-nav{
-    width: 100%;
-    height: auto;
-    margin: 20px 0px;
+.flex{
+    display: flex;
+}
+
+.flex-center{
     display: flex;
     justify-content:center;
     align-items: center;
 }
+  
+/* -------------------------------------NavBar--------------------------- */
 
-#navLinks{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
-    background-color:var(--bgc) ;
-    height:75px;
-    width: 60%;
-    border-radius:20px;
-    margin: 0;
-    padding: 0;
+
+header{
+    width: 100%;
+    min-height: 100px;
 }
 
-#navLinks a {
+.navbar{
+    width: 90%;
+    height: 90px;
+    background-color: var(--black-subttle);
+    border-radius: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-logo a{
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: black;
     transition: color .3s ease-in-out;
+}
+
+.menu{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    transition: color .3s ease-in-out;
+    margin:15px;
+    padding:5px;
     position: relative;
-    padding-bottom: 5px;
 }
 
-#navLinks a:hover{
-    color: var(--ascentColor);
+.menu a:hover{
+    color: var(--ascent-color);
 }
 
-#navLinks a::after{ 
-    /* to set a underline */
+.menu a::after{ 
     content: "";
     position:absolute;
     bottom: 0;
@@ -68,11 +82,11 @@ nav{
     width: 0;
     height: 2px;
     padding: 0px;
-    background-color: var(--ascentColor);
+    background-color: var(--ascent-color);
     transition: width 0.3s ease-in-out;
 }
-#navLinks a:hover:after{
-    /* to view the underline */
+
+.menu a:hover:after{
     width: 100%;
     padding: 1px;
 }
@@ -80,65 +94,59 @@ nav{
 
 /* ----------------------------------------Hero------------------------- */
 
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#hero{
     width: 100%;
     margin: 20px 0px;
- 
 }
 
-.heroWrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:85% ; 
-        padding: 10px;
+.hero-container{
+        width:85%; 
+        max-width: 1920px;
         height: auto;
-        background-color:var(--bgc);
+        padding: 10px;
+        border-radius: 20px;
+        background-color:var(--black-subttle);
         box-shadow: var(--shadow-subttle);
-    
-
 }
 
-.introText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.intro-container{
     flex-flow: column;
+    padding: 20px;
 }
 
-#imShubik{
+#im-Shubik{
     font-size: 7rem;
-    margin:25px;
+    margin-bottom: 5px;    
     text-align: center;
 }
 
-#introDescription{
+#introduction{
     font-size: 1.2rem;
     text-align: center;
     width: 80%;
 }
-#occupation{
-    font-size: 1.5rem;
+
+#job-title{
+    font-size: 2rem;
+    margin-bottom: 50px;
 }
 
-#introDescription p {
+#introduction p {
     margin: 0;
-    padding: 20px;
-    font-size: 1.2rem;
+    /* padding:0px 25px; */
+    font-size: 1rem;
 }
 
-#downloadCV{
+#downloadCV-button{
     width:150px;
     height: 50px;
-    border-radius:50px;
     margin:25px;
-    background-color:var(--ascentColor);
+
     font-size: 1.2rem;
+    border-radius:50px;
     border: none;
     cursor: pointer;
+    background-color:var(--ascent-color);
 }
 
 #downloadCV:hover{
@@ -146,22 +154,20 @@ nav{
     transition: transform 0.3s ease-in-out;
 }
 
-.introImage{
+.intro-image{
     margin-left:-80px;
 
 }
 
-.introImage img {
+.intro-image img {
     height: auto;
     width: 400px; 
-    margin:0;
-    padding: 0; 
 }
 
-.underline{
+.intro-image-underline{
     width: 386px;
     height: 6px;
-    background-color: var(--ascentColor);
+    background-color: var(--ascent-color);
     border-radius: 3px;
     margin-bottom: 5px;
 }
@@ -171,34 +177,28 @@ nav{
 #skills{
     width: 100%;
     margin: 50px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
-.skillsWrapper{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.skills-container{    
     flex-direction: column;
     padding: 10px;
     height: auto;
     width:75%;
-    background-color: var(--bgc);
-    border-radius: 5px;
+    background-color: var(--black-subttle);
+    border-radius: 20px;
     box-shadow: var(--shadow-subttle);
 }
-.skillsWrapper h2{ 
-    color: var(--ascentColor);
+.skills-container h2{ 
+    color: var(--ascent-color);
     font-size:2rem;
 } 
 
 
-.skillsList{
+.skills-list{
     width: 100%;
-    display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
   
 }
 
@@ -212,7 +212,7 @@ nav{
 }
 
 .skillImgIcon img{
-    margin:20px 0px;
+    margin:15px 0px;
     height:auto;
     width:100px;
 }
@@ -442,78 +442,96 @@ footer a:hover{
     color: #000;
 }
 
-/* FOR Tablet View  */
-@media screen and (min-width:481PX) and (max-width:1116px){
-    .heroWrapper{
-        width: 95%;
-    }
-    /* .introImage img{
-    width: 300px;
-    }
-    .underline{
-        width: 290px;
-    } */
-    .skillsList{
-        flex-wrap: wrap;
-    }
+@media screen and (min-width:580PX) and (max-width:1079px){
+
 }
 
-@media screen and (max-width:480px){
+
+
+/* FOR Tablet View  */
+@media screen and (min-width:426PX) and (max-width:579px){
+
+    :root{
+        font-size: 14px;
+    }
+
+    .navbar{
+        flex-flow: column;
+    }
+
+    .hero-container{
+        flex-wrap: wrap-reverse;
+    }
+    #introduction p {
+        padding:0px;
+    }
+    
+
+    
+    .intro-image{
+        margin: 0%;
+    }
+    .intro-image img{
+    width: 300px;
+    }
+
+    .intro-image-underline{
+        width: 290px;
+    }
+
+    #im-Shubik{
+        font-size: 6rem;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:426px){
 /* --------------------------Root Setting----------------------------------- */
     :root{
-        font-size: 16px;
+        font-size: 12px;
     }
 
 /* -------------------------------Nav Bar----------------------------------- */
 
-    #navLinks{
+    .navbar{
         flex-flow: column;
-        height: auto;
-        gap:20px;
-    }
-    #navLinks a{
-        font-size:1rem ;
     }
 
 /* ------------------------------Hero --------------------------------- */
 
-    .heroWrapper{
+    .hero-container{
         flex-wrap: wrap-reverse;
     }
+    #introduction p {
+        padding:0px;
+    }
 
-    .introImage{
+
+    .intro-image{
         margin: 0%;
     }
 
-    .introImage img{
+    .intro-image img{
         width:250px;
     }
 
-    .underline{
+    .intro-image-underline{
         width: 240px;
     }
 
-    #imShubik{
-        font-size: 3.5rem;
-        margin: 15px;
-    }
-
-    #occupation{
-        font-size: 1.25rem;
-    }
-
-    #introDescription p{
-        font-size: 1rem;
-    }
-    #downloadCV{
-        font-size: 1rem;
+    #im-Shubik{
+        font-size: 5rem;
+        margin-top: 10px;
     }
 
     /* ------------------------------Skills-------------------------- */
 
-    .skillsList{
-        flex-wrap: wrap;
-    } 
+    .skillImgIcon img{
+        width:60px;
+        height: auto;
+    }
+      
 
     /* --------------------About me ----------------------------- */
 
