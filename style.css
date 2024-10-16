@@ -101,7 +101,7 @@ header{
 
 .hero-container{
         width:85%; 
-        max-width: 1920px;
+        max-width: 1200px;
         height: auto;
         padding: 10px;
         border-radius: 20px;
@@ -115,7 +115,7 @@ header{
 }
 
 #im-Shubik{
-    font-size: 7rem;
+    font-size: 5rem;
     margin-bottom: 5px;    
     text-align: center;
 }
@@ -128,6 +128,7 @@ header{
 
 #job-title{
     font-size: 2rem;
+    margin-top: 15px;
     margin-bottom: 50px;
 }
 
@@ -142,7 +143,7 @@ header{
     height: 50px;
     margin:25px;
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-radius:50px;
     border: none;
     cursor: pointer;
@@ -184,6 +185,7 @@ header{
     padding: 10px;
     height: auto;
     width:75%;
+    max-width: 1000px;
     background-color: var(--black-subttle);
     border-radius: 20px;
     box-shadow: var(--shadow-subttle);
@@ -208,81 +210,75 @@ header{
     justify-content: center;
     flex-flow: column;
     margin:10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    
 }
 
 .skillImgIcon img{
     margin:15px 0px;
     height:auto;
     width:100px;
+
 }
 
 
+
 /*--------------------------- About Me Section ------------------------*/
-#aboutme {
+#about {
     height:auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin:10px 0px;
 }
 
-#introParagraph h2 {
+.about-container h2 {
     font-size: 2rem;
     color: #FF792E;
 }
 
-#introParagraph {
-    background-color: var(--bgc);
-    padding: 0px 40px;
+.about-container {
+    padding: 10px 40px;
     width: 80%;
-    text-align: center;
     max-width: 1200px;   
-    border-radius: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--black-subttle);
     box-shadow:var(--shadow-subttle);
-    transform: translateY(-75px);
-
 }
 
-#introParagraph p {
-    font-size: 1.2rem;
+.about-container p {
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
 
-/* Project Section */
-#myProjects {
-    margin:10px 0px;
-    padding: 0px 0;
-    text-align: center;
+/*------------ Project Section ----------------*/
+#my-projects {
+    width: 100%;
+    flex-flow: column;
+
 }
 
-#myProjects h2 {
+#my-projects h2 {
     font-size: 2rem;
-    margin-bottom: 40px;
     color: #FF792E;
 }
 
-#projectList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+.project-container {
     flex-wrap: wrap;
-    margin: 0 40px;
 }
 
 .project {
-    background-color:var(--backgroundColor);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 300px;
+    margin:20px;
     padding: 20px;
     text-align: left;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:var(--ascent-color-subttle);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
@@ -432,7 +428,7 @@ footer a:hover{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-color: var(--ascentColor);
+    background-color: var(--ascent-color);
     transform: translateX();
 
 
