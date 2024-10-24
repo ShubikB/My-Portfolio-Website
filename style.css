@@ -40,6 +40,7 @@ header{
 }
 
 .navbar{
+    max-width: 800px;
     width: 90%;
     height: 90px;
     background-color: var(--black-subttle);
@@ -107,6 +108,9 @@ header{
         border-radius: 20px;
         background-color:var(--black-subttle);
         box-shadow: var(--shadow-subttle);
+        position: relative;
+        overflow: hidden;
+
 }
 
 .intro-container{
@@ -171,6 +175,34 @@ header{
     background-color: var(--ascent-color);
     border-radius: 3px;
     margin-bottom: 5px;
+}
+
+
+.bubble-effect{
+    width: 200px;
+    height: 200px;
+    background-color: var(--ascent-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    filter: blur(10px);
+
+    animation: breathe 3s infinite ease-in-out;
+}
+
+@keyframes breathe {
+    0%, 100% {
+        width: 200px;
+        height: 200px;
+        filter: blur(10px);
+    }
+    50% {
+        width: 250px;
+        height: 250px;
+        filter: blur(15px);
+    }
 }
 
 /* -----------------My Skills ----------------------------------- */
